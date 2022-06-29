@@ -1,4 +1,5 @@
 # opt_squeeze.py - A script for saving our common vocab as OPT-1.3b embeds
+import pdb
 from transformers import GPT2Tokenizer, OPTModel
 import torch
 from tqdm import tqdm
@@ -29,12 +30,13 @@ def squeeze(word, tokenizer, model):
         final_embed /= embeddings.shape[0] - 1
     return final_embed
 
+
 def main():
     print("starting")
     tokenizer = GPT2Tokenizer.from_pretrained("facebook/opt-1.3b", cache_dir="/scratch/mbarlow6/.cache")
     model = OPTModel.from_pretrained("facebook/opt-1.3b", cache_dir="/scratch/mbarlow6/.cache")
 
-    path = u'/gpfs/fs1/home/mbarlow6/Desktop/Conceptual-Analysis/barlow/valid_vocab.txt'
+    path = u'../expanded_vocab.txt'
     
     vocab = []
     embeds = []
@@ -50,7 +52,7 @@ def main():
         embeds.append(squeeze(word, tokenizer, model))
 
     print("saving")
-    with open(u'./opt/1_3B.txt', 'w') as f:
+    with open(u'../opt/1_3B.txt', 'w') as f:
         for em in embeds:
             for p in em:
                 f.write(str(p) + ' ')
