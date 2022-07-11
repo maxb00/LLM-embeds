@@ -14,3 +14,10 @@ This will automatically build from the frozen environemnt provided! Current full
 ```
 conda create -n aca-dist -c conda-forge pytorch sentencepiece "transformers>=4.20" scikit-learn openai tqdm gensim ipykernel
 ```
+After creation, activate the environment with `conda activate aca-dist` (if you named it that) and environment setup and activation should be complete.
+
+### Project Navigation
+Now that the project is cloned and the environment created, open the project in your favorite Jupyter notebook viewer. VSCode is my favorite, PyCharm works, and I'm sure there are many other options as well. Once the project is loaded, make sure to set your Python interpreter to the Conda environment we just created, as it holds our dependencies and conflict resolutions. 
+
+This project contains and generates results for different tasks in seperate notebooks for similar tasks. Here is the basic structure:
+```
