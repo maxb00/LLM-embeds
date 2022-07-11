@@ -4,3 +4,6 @@ gpt/gpt_babbage.txt filter=lfs diff=lfs merge=lfs -text
 opt/1_3B.txt filter=lfs diff=lfs merge=lfs -text
 opt/1_3B.txt.orig filter=lfs diff=lfs merge=lfs -text
 t5/t5large.txt filter=lfs diff=lfs merge=lfs -text
+opt/13B.txt filter=lfs diff=lfs merge=lfs -text
+gpt/gpt_curie.txt filter=lfs diff=lfs merge=lfs -text
+t5/t53b.txt filter=lfs diff=lfs merge=lfs -text
