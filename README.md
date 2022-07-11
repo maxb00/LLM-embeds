@@ -21,3 +21,23 @@ Now that the project is cloned and the environment created, open the project in 
 
 This project contains and generates results for different tasks in seperate notebooks for similar tasks. Here is the basic structure:
 ```
+LLM-embeds/
+├── gpt/
+│   ├── gpt_ada.txt
+│   ├── gpt_babbage.txt
+│   └── gpt_curie.txt
+├── opt/
+│   ├── 1_3B.txt
+│   └── 13B.txt
+├── t5/
+│   ├── t5large.txt
+│   └── t53b.txt
+├── old/
+│   └── .. (misc old results)
+├── Automated Conceptual Analysis_5.ipynb  -> Tianyi's Foundation
+├── big_s.ipynb                            -> Better 'scoring' attempt
+├── negatives.ipynb                        -> 'Negatives' for "small" LLMs
+├── negatives_lrg.ipynb                    -> 'Negatives' for "large" LLMs
+├── simdef.ipynb                           -> Angle and Magnitude tests, "small"
+└── simdef_lrg.ipynb                       -> Angle and Magnitude tests, "large"
+```
