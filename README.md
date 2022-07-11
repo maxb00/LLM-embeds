@@ -41,3 +41,5 @@ LLM-embeds/
 ├── simdef.ipynb                           -> Angle and Magnitude tests, "small"
 └── simdef_lrg.ipynb                       -> Angle and Magnitude tests, "large"
 ```
+"Small" Models are: GPT-3 Ada, OPT-1.3B, and T5-large
+"Large" Models are: GPT-3 Curie, OPT-13B, T5-3b (xl)
