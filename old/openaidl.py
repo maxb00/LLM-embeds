@@ -13,7 +13,7 @@ embeds = []  # target word embeddings from model
 vocab = []   # list of all our valid words
 
 print('vocab time')
-with open(u'../expanded_vocab.txt', 'r') as f:
+with open(u'../vocab/expanded_vocab.txt', 'r') as f:
     for line in f:
         vocab.append(line.strip('\n'))
 

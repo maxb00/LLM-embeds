@@ -36,7 +36,7 @@ def main():
     tokenizer = GPT2Tokenizer.from_pretrained("facebook/opt-1.3b", cache_dir="/scratch/mbarlow6/.cache")
     model = OPTModel.from_pretrained("facebook/opt-1.3b", cache_dir="/scratch/mbarlow6/.cache")
 
-    path = u'../expanded_vocab.txt'
+    path = u'../vocab/expanded_vocab.txt'
     
     vocab = []
     embeds = []
