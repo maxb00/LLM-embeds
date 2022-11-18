@@ -7,3 +7,6 @@ t5/t5large.txt filter=lfs diff=lfs merge=lfs -text
 opt/13B.txt filter=lfs diff=lfs merge=lfs -text
 gpt/gpt_curie.txt filter=lfs diff=lfs merge=lfs -text
 t5/t53b.txt filter=lfs diff=lfs merge=lfs -text
+t5/*.txt filter=lfs diff=lfs merge=lfs -text
+t5/flan_t5_11b.txt filter=lfs diff=lfs merge=lfs -text
+gpt/gpt_davinci.txt filter=lfs diff=lfs merge=lfs -text
